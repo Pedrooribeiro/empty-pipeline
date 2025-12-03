@@ -1,0 +1,11 @@
+name: Empty Workflow
+
+on: [push]
+
+jobs:
+  do-nothing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do nothing step
+        id: noop
+        # Não há campo `run` aqui, então esse step não faz nada.
